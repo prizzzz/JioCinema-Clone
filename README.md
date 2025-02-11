@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/dd79f9ec-5393-4809-9176-230d317d716e)JioCinema Clone 🎬
+JioCinema Clone 🎬
 🚀 A JioCinema Clone built using React.js, developed as part of the JioCinema Clone React Bootcamp by LetsUpgrade. This project showcases a streaming platform UI with features like dynamic content rendering using APIs.
 
 
