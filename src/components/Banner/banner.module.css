@@ -1,0 +1,82 @@
+.banner {
+    width: 100%;
+    height: 450px;
+    background-color:black;
+    overflow: hidden;
+    margin: 10px 0px;
+}
+
+.bannerSlide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.movieInfo {
+    width: 40%;
+    height: 50%;
+    color: white;
+    padding: 30px 50px;
+    align-self: flex-end;
+    border-radius: 10px;
+    
+}
+
+.movieDes {
+    display: flex;
+    column-gap: 10px;
+    padding-bottom: 15px;
+}
+
+.movieInfo > button {
+    width:100px;
+    height: 35px;
+    padding: 10px 20px;
+    background-color: #d9008d;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.imageContainer {
+    width: 60%;
+    height:450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imageContainer::before {
+    content: "";
+    position: absolute;
+    inset:0;
+    background: radial-gradient(
+        ellipse at center,
+        rgba(0, 0, 0, 0.3) 20%,
+        rgba(1, 1, 1, 1) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+.movieImg {
+    width: 100%;
+    height: 95%;
+    z-index: 0;
+    
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent),
+    linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent),
+    linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+    
+    -webkit-mask-composite: multiply;
+    mask-composite: intersect;
+}

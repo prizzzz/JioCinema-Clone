@@ -1,0 +1,46 @@
+.shows {
+  width: 100%;
+  height: 340px;
+  background-color: #060707;
+  padding: 0px 0px 0px 2%;
+  overflow: hidden; /* Ensure no overflow */
+}
+
+.title {
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+.showsParent {
+  width: 100%;
+  height: 85%;
+  column-gap: 10px;
+  overflow: hidden; /* Prevent any unwanted spacing */
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.navButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

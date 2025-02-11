@@ -1,0 +1,36 @@
+.show {
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+    display: flex; /* Ensures content stays aligned */
+    justify-content: center; /* Centers image */
+}
+
+.show > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    position: absolute;
+}
+
+.movieTitle {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    align-self: flex-end;
+    background-color: rgba(6, 7, 7, 0.5);
+    cursor: pointer;
+    transition: height 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.movieTitle:hover {
+    height: 35%;
+}
